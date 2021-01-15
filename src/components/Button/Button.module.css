@@ -1,0 +1,28 @@
+.button {
+    width: 314px;
+    height: 70px;
+    background: #8CBFF8;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #77b3f8;
+    cursor: pointer;
+}
+
+.buttonText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+    color: white;
+}
+
+.MuiInputBase-input .MuiInput-input {
+    background: red;
+}
