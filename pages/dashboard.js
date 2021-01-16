@@ -25,12 +25,14 @@ export default function Dashboard() {
       </main>
 
       <section className={styles.section}>
-        <div className={styles.profileOption}>
-          <h3>Details</h3>
-          <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 18L15 12L9 6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </div>
+        <Link href="/profile/details">
+          <div className={styles.profileOption}>
+            <h3>Details</h3>
+            <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+        </Link>
         <div className={styles.profileOption}>
           <h3>Orders</h3>
           <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
