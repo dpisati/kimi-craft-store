@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import LoginHeader from '../../src/components/LoginHeader'
 import Button from '../../src/components/Button'
 import styles from '../../styles/Login.module.css'
@@ -54,7 +53,7 @@ export default function Login() {
           <div className={styles.loginInputContainer}>
             <TextField id="email" label="Email Address" fullWidth />
           </div>
-          <div className={styles.loginBtn}>        
+          <div className={styles.loginBtn} onClick={() => setLoginOrSignUp("login")}>
               <Button href="/auth/login" title="Reset Password" />        
           </div>
         </>
