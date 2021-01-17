@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+
 import styles from '../styles/Dashboard.module.css'
 
 import Button from '../src/components/Button'
@@ -33,18 +34,21 @@ export default function Dashboard() {
             </svg>
           </div>
         </Link>
+        
         <div className={styles.profileOption}>
           <h3>Orders</h3>
           <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9 18L15 12L9 6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
-        <div className={styles.profileOption}>
-          <h3>Pending reviews</h3>
-          <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 18L15 12L9 6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </div>
+        <Link href="/profile/pending-reviews">
+          <div className={styles.profileOption}>
+            <h3>Pending reviews</h3>
+            <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+        </Link>
         <div className={styles.profileOption}>
           <h3>About</h3>
           <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

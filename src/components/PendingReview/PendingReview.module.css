@@ -1,0 +1,57 @@
+.pendingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0px 11px 16px 6px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding: 0px;
+    height: 79px;
+    padding-right: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin: 0 50px;
+    margin-bottom: 28px;
+}
+
+
+.pendingContainer:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+
+}
+
+.reviewImage {
+    width: 82px;
+    height: 82px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 4px solid #8CBFF8;
+    position: absolute;
+    left: -22px;
+    top: -14px;
+}
+
+.pendingText {
+    font-family: Crafty Girls;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    padding-left: 78px;
+}
+
+
+.editBtn {
+    border:none;
+    width: 65px;
+    height: 65px;
+    background: #8CBFF8;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.editBtn:hover {
+    background-color: #77B3F8;
+    cursor: pointer;
+}

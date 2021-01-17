@@ -67,7 +67,7 @@
     margin-bottom: 60px;
 }
 
-.profileOption {
+.profileOption, .pendingContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +80,6 @@
     margin-bottom: 18px;
     transition: all 0.3s;
 }
-
 
 
 .profileOption:hover {
@@ -121,10 +120,12 @@
     background-color: #8CBFF8;
     color: white;
     bottom: -52px;
+    transition: all 0.3s
 }
 
 .changePictureContainer:hover {
     cursor: pointer;
+    background-color: #77B3F8;
 }
 .changePicture {
     font-family: Montserrat;
